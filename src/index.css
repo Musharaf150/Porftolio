@@ -9,41 +9,25 @@
 }
 
 body {
-  background: #010103;
+  background: #030303;
   font-family: 'General Sans', sans-serif;
+  color: #ffffff;
+  overflow-x: hidden;
 }
 
 @layer utilities {
+  .bg-grid-pattern {
+    background-size: 50px 50px;
+    background-image: 
+      linear-gradient(to right, rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+  }
+  
+  .radial-mask {
+    mask-image: radial-gradient(circle at center, black 40%, transparent 80%);
+    -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 80%);
+  }
 
-  .cool-intro {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
-    color: #333;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 600px;
-    margin: 50px auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .cool-intro:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
-  }
-  
-  .cool-intro h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #3f51b5;
-  }
-  
-  .cool-intro p {
-    line-height: 1.6;
-  }
-  
-  
   .c-space {
     @apply sm:px-10 px-5;
   }

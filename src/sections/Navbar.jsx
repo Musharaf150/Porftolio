@@ -29,7 +29,9 @@ const Navbar = () => {
         <div className='max-w-7xl mx-auto'>
             <div className='flex justify-between items-center py-5
             mx-auto c-space'>
-                <a href="/"><img src="\assets\logo.png" alt="logo" className='w-44 h-6' /></a>
+                <a href="/">
+                    <img src="/assets/logo.svg" alt="Muhammad Musharaf Logo" className='w-56 h-7 object-contain' />
+                </a>
 
                 <button onClick={toggleMenu} className='text-neutral-400 hover:text-white
                 focus:outline-none sm:hidden flex' aria-label='Toggle menu'>

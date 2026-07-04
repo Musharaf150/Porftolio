@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 32" width="240" height="32">
+  <defs>
+    <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="50%" stop-color="#2dd4bf" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Icon Symbol: Overlapping code brackets / geometric node -->
+  <g transform="translate(4, 4)">
+    <rect x="0" y="0" width="24" height="24" rx="6" fill="rgba(6, 182, 212, 0.1)" stroke="url(#logo-grad)" stroke-width="1.8" />
+    <path d="M7,12 L11,8 L7,4 M17,12 L13,8 L17,4" fill="none" stroke="url(#logo-grad)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" transform="translate(0, 4)" />
+  </g>
+  
+  <!-- Typography matching General Sans/Inter theme -->
+  <text x="38" y="21" font-family="'General Sans', system-ui, -apple-system, sans-serif" font-size="13.5" font-weight="700" fill="#ffffff" letter-spacing="-0.02em">
+    Muhammad
+    <tspan fill="#06b6d4" font-weight="800">Musharaf</tspan>
+  </text>
+</svg>

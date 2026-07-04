@@ -33,8 +33,10 @@ const Contact = () => {
                 templateKey,
                 {
                     from_name: form.name,
-                    to_name: 'Musharaf',
+                    to_name: 'Muhammad Musharaf',
                     from_email: form.email,
+                    reply_to: form.email,
+                    email: form.email,
                     to_email: 'mushi.ashraf38@gmail.com',
                     message: form.message,
                 },publicKey)
@@ -67,23 +69,25 @@ const Contact = () => {
 
                     <form ref={formRef} onSubmit={handleSubmit} className='mt-12 flex flex-col space-y-7'>
 
-                        <label className='space-y-3'>
+                        <label htmlFor="name-input" className='space-y-3 flex flex-col'>
                             <span className='field-label'>Full Name</span>
+                            <input
+                                type="text"
+                                name='name'
+                                id="name-input"
+                                value={form.name}
+                                onChange={handleChange}
+                                required
+                                className='field-input'
+                                placeholder='Name...' />
                         </label>
-                        <input
-                            type="text"
-                            name='name'
-                            value={form.name}
-                            onChange={handleChange}
-                            required
-                            className='field-input'
-                            placeholder='Name...' />
 
-                        <label className="space-y-3">
+                        <label htmlFor="email-input" className="space-y-3 flex flex-col">
                             <span className="field-label">Email address</span>
                             <input
                                 type="email"
                                 name="email"
+                                id="email-input"
                                 value={form.email}
                                 onChange={handleChange}
                                 required
@@ -92,10 +96,11 @@ const Contact = () => {
                             />
                         </label>
 
-                        <label className="space-y-3">
+                        <label htmlFor="message-input" className="space-y-3 flex flex-col">
                             <span className="field-label">Your message</span>
                             <textarea
                                 name="message"
+                                id="message-input"
                                 value={form.message}
                                 onChange={handleChange}
                                 required
